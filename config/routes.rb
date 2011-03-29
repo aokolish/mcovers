@@ -1,15 +1,17 @@
 MessinaCovers::Application.routes.draw do
-  get "static/index"
 
-  get "static/construction"
+  match '/construction' => 'static#construction', :as => :construction
 
-  get "static/gallery"
+  match '/gallery' => 'static#gallery', :as => :gallery
 
-  get "static/distributors"
+  match '/distributors' => 'static#distributors', :as => :distributors
 
-  get "static/sizes"
+  match '/sizes' => 'static#sizes', :as => :sizes
 
-  get "static/custom"
+  match '/custom' => 'static#custom', :as => :custom
+  
+  # map root to static controller
+  root :to => "static#index", :as => :index
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -57,9 +59,6 @@ MessinaCovers::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
-  # map root to static controller
-  root :to => "static#index"
 
   # See how all your routes lay out with "rake routes"
 
