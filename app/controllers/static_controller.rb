@@ -1,4 +1,6 @@
 class StaticController < ApplicationController
+  caches_page :index, :construction, :gallery, :distributors, :sizes, :custom   
+    
   def index
   end
 
