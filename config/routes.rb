@@ -13,9 +13,6 @@ MessinaCovers::Application.routes.draw do
   # map root to static controller
   root :to => "static#index", :as => :index
 
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
-
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
