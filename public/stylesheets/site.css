@@ -8,18 +8,51 @@ Twitter: @rich_clark
 
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
 
-/*End css reset*/
+/*************
+	Global Styles
+*************/
 
 body {
 	font-family: 'Lobster', arial, serif;
+	background: url("../images/footer_bg.png") #3554A5 repeat;
+}
+
+p {
+	font-family: Georgia, arial, serif;
+	line-height: 16px;
 }
 
 h1 {
-	
+	font-weight: normal;
 }
 
+#primary-content {
+	background: #D1D1D1 url("../images/gray_bg.gif") repeat;
+}
+
+#primary-content .content-wrap {
+	width: 940px;
+	margin: 0 auto;
+	padding: 56px 0px 60px;
+}
+
+/*rounded corners and drop shadow behind all copy
+	used on every page*/
+.index #touts div, 	
+.index .intro {
+	background: white;
+	padding: 25px;
+	border-radius: 18px;
+	-webkit-box-shadow: 2px 2px 23px rgba(0,0,0,0.4); 	/*for safari*/
+	box-shadow: 2px 2px 23px rgba(0,0,0,0.4);
+}
+
+/*************
+	Header
+*************/
+
 #header {
-	background: url("../images/top_header_bg.png") repeat-x;
+	background: #373737 url("../images/top_header_bg.png") repeat-x;
 	height: 100px;
 }
 
@@ -29,45 +62,147 @@ h1 {
 }
 
 #logo {
-	padding-top: 18px;
+	padding: 18px 0px 0px 10px;
+}
+
+#header ul.semantic-navigation {
+	margin-top: 35px;
+	float: right;
+	list-style-type: none;
+}
+
+#header ul.semantic-navigation li {
+	float: left;
+	padding-left: 25px;
+	font-size: 24px;
+}
+
+#header ul.semantic-navigation li a {
+	color: white;
+	text-decoration: none;
+}
+
+#header ul.semantic-navigation li.highlighted a,
+#header ul.semantic-navigation li a:hover {
+	padding-bottom: 13px;
+	border-bottom: 2px solid #9CB6F7;
+	color: #9CB6F7;
 }
 
 #sub-header {
 	height: 155px;
-	background: url("../images/sub_header_bg.png") repeat-x;
-/*	background: url("../images/sub_header_alt.png") repeat-x;*/
+	background: #3554A5 url("../images/sub_header_bg.png") repeat-x;
 }
 
 #sub-header h1 {
 	font-size: 40px;
 	color: #FFF;
-	font-weight: normal;
 	width: 960px;
 	margin: 0 auto;
-	padding-top: 48px;
+	padding: 48px 0px 0px 10px;
 	text-shadow: #222 4px 5px 11px;
 }
 
 .sub-header-shadow {
 	height: 5px;
-	background: url("../images/sub_header_shadow.png") repeat-x;
+	background: #D1D1D1 url("../images/sub_header_shadow.png") repeat-x;
 }
 
-#primary-content {
-/*	THIS HEIGHT IS TEMPORARY*/
-	height: 800px;	
-	background: url("../images/gray_bg.gif") repeat;
+/*************
+	Footer
+*************/
+
+#footer {
+	height: 225px;
+	border-top: 1px solid black;
+	clear: both;
+	color: white;
 }
 
-#primary-content .content-wrap {
-	width: 960px;
+#footer .content {
+	width: 940px;
 	margin: 0 auto;
-	padding: 60px 0;
+	padding-top: 37px;
 }
+
+#footer .info,
+#footer .contact {
+	width: 50%;
+	float: left;
+}
+
+#footer .info {
+	width: 285px;
+	margin: 80px 0 0 185px;
+}
+
+#footer p {
+	line-height: 20px;
+}
+
+#footer p.copy {
+	padding-bottom: 10px;
+}
+
+#footer p.address {
+	padding-top: 30px;
+}
+
+#footer a {
+	color: #9EB7F7;
+}
+
 
 /*************
 	HomePage
 *************/
+
+.index .content-wrap {
+	background: url("../images/dave_with_bag.png") 35px 18px no-repeat;
+}
+
+.index .intro {
+	float: right;
+	width: 410px;
+	margin-left: 500px;
+	padding: 30px;
+}
+
+.index #touts h1,
+.index .intro h1 {
+	font-size: 36px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #000;
+}
+
+.index .intro p {
+	font-size: 14px;
+	padding-top: 15px;
+}
+
+.index #touts {
+	clear: both;
+	height: 357px;
+}
+
+.index #touts div {
+	float: right;
+	width: 250px;
+	margin: 74px 0 0 20px;
+}
+
+.index #touts div:last-child {
+	margin-left: 0px;
+}
+
+.index #touts h1 {
+	text-align: center;
+}
+
+.index #touts p {
+	padding-top: 15px;
+	font-size: 14px;
+}
 
 /*************
 	Construction
@@ -84,6 +219,8 @@ h1 {
 /*************
 	Distributors
 *************/
+
+  #map_canvas { height: 450px; width: 960px; }
 
 /*************
 	Custom
