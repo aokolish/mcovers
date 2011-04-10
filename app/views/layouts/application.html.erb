@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MessinaCovers</title>
+	<meta charset=utf-8>
+  <title>Messina Covers <%= "- #{@title}" unless @title.nil? %></title>
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag :all %>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
   <%= csrf_meta_tag %>
 </head>
+
 <body class="<%= "#{params[:action]}" %>">
 		
 	<div id="header">
 		<div class="header-content">
 			<a href="/"><%= image_tag("logo.png", :id => 'logo') %></a>
+			<% semantic_navigation :main do |n| %>
+		      <%= n.item 'Home', :link => '/' %>
+		      <%= n.item 'Construction' %>
+					<%= n.item 'Gallery' %>
+					<%= n.item 'Distributors' %>
+					<%= n.item 'Sizes' %>
+					<%= n.item 'Custom' %>
+		  <% end %>
 		</div>
 	</div>
 
@@ -26,6 +37,28 @@
 		</div>
 	</div>
 	
-  <%= javascript_include_tag :defaults %>
+	<div id="footer">
+		<div class="content">
+			<div class="contact">
+				<p>Call me: (740) 591-8318</p>
+				<p>Email me: messinacovers@gmail.com</p>
+				<p>Friend me on <a href="#">Facebook</a></p>
+				<p class="address">
+					Messina Covers<br />
+					&lt;xxx Road&gt;<br />
+					Athens, OH 45701
+				</p>
+			</div>
+		
+			<div class="info">
+				<!-- Current year from application_helper.rb -->
+				<p class="copy">&copy; Copyright <%= current_year %>, Messina Covers</p>
+				<p>Designed and developed by:</p>
+				<p>Alex Okolish <a href="mailto:ao140505@ohio.edu">ao140505@ohio.edu</a></p>
+			</div>
+		</div>
+	</div>
+	
+  <%= javascript_include_tag 'jquery-1.5.2.min', 'application' %>
 </body>
 </html>
