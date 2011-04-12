@@ -221,7 +221,7 @@ h1 {
 	Distributors
 *************/
 	.distributors .intro {
-		margin: 0 60px 60px 0;
+		margin: 0 60px 100px 0;
 		width: 330px;
 		float: left;
 	}
@@ -232,15 +232,16 @@ h1 {
 	}
 	
 	.distributors #accordion {
-		width: 410px;
-/*		TEMPORARY HEIGHT*/
-		height: 410px;
+		width: 460px;
+		padding: 0;
 		margin-bottom: 60px;
 		float: right;
+		border: 1px solid black;
 		background: black url("../images/accordian_bg.png") no-repeat;
 	}
 	
   #map_canvas { 
+		clear: both;
 		height: 450px; 
 		width: 960px; 
 	}

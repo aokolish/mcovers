@@ -1,0 +1,64 @@
+#accordion {
+	font-family: Georgia, arial, serif;
+	font-size: 14px;
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited,
+.ui-state-active a {
+	color: white;
+	text-decoration: none;
+}
+
+.ui-accordion .ui-accordion-header { 
+	cursor: pointer; 
+	font-weight: normal;
+	position: relative; 
+	border-bottom: 1px solid white;
+	margin-top: 1px; 
+	zoom: 1; 
+}
+
+.ui-accordion .ui-accordion-header a { 
+	display: block; 
+	padding: 13px 5px 13px 5px; 
+}
+
+#accordion div:last-child .ui-accordion-header {
+	border: none;
+}
+
+.ui-widget-content { 
+	background: white;
+	color: #333333; 
+}
+
+#accordion div:last-child .ui-widget-content { 
+	border-bottom-right-radius: 18px;
+	border-bottom-left-radius: 18px;	
+}
+
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+/*	change hover arrow or colors?*/
+}
+
+.ui-state-default .ui-icon { background-image: url("../images/ui-icons_ffffff_256x240.png"); }
+.ui-state-active .ui-icon {background-image: url("../images/ui-icons_ffffff_256x240.png"); }
+.ui-icon { width: 16px; height: 16px; background-image: url(images/ui-icons_222222_256x240.png); }
+.ui-icon-triangle-1-n { background-position: 0 -16px; }
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+.ui-icon-triangle-1-sw { background-position: -80px -16px; }
+.ui-icon-triangle-1-w { background-position: -96px -16px; }
+.ui-icon-triangle-1-nw { background-position: -112px -16px; }
+.ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+.ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+
+.ui-accordion { width: 100%; }
+.ui-accordion .ui-accordion-li-fix { display: inline; }
+.ui-accordion .ui-accordion-header-active { border-bottom: 0 !important; }
+.ui-accordion-icons .ui-accordion-header a { padding-left: 2.2em; }
+.ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px; }
+.ui-accordion .ui-accordion-content { padding: 1em 2.2em; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none; zoom: 1; }
+.ui-accordion .ui-accordion-content-active { display: block; }
