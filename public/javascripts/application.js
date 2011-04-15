@@ -54,7 +54,7 @@ $(document).ready(function() {
 		initialize();
 		
 		// Accordion
-		$("#accordion").accordion({ header: "h3" });
+		$("#accordion").accordion({ header: "h3", autoHeight: false });
 
 		//hover states on the static widgets
 		$('#dialog_link, ul#icons li').hover(
