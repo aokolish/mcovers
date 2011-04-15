@@ -1,6 +1,9 @@
 <div>
 	<h3><a href="#"><%= dist[1]['name'] %></a></h3>
 	<div>
+		<% unless dist[1]['mailing_name'].nil? %>
+			<p><%= dist[1]['mailing_name'] %></p>
+		<% end %>
 		<p><%= dist[1]['address1'] %></p>
 		<p><%= dist[1]['address2'] %></p>
 		<p><%= dist[1]['phone1'] %></p><br />

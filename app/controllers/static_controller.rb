@@ -19,8 +19,9 @@ class StaticController < ApplicationController
   def distributors
     @title = 'distributors'
     @distributors = YAML.load_file("#{RAILS_ROOT}/config/distributors.yml")
-    # sort them by their names (ignores some words at the start of the name)
-    @distributors = @distributors.to_a.sort {|x, y| x[1]['name'].sub(/^(the|a|an)\s/i, '') <=> y[1]['name'].sub(/^(the|a|an)\s/i, '') }
+    @distributors = @distributors.sort do |x, y|                                   
+      x[1]['name'].sub(/^(the|a|an)\s/i, '') <=> y[1]['name'].sub(/^(the|a|an)\s/i, '')    # sort them by their names (ignoring some words like 'the')  
+    end
   end
 
   def sizes

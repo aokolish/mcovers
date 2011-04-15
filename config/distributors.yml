@@ -2,6 +2,7 @@
 
 one:
    name: A&G Music Products Co.
+   mailing_name: 
    address1: 564 14th St
    address2: Oakland, CA 94612
    phone1: 510-832-2452
@@ -9,6 +10,7 @@ one:
    
 two:
   name: The Bass Doctor
+  mailing_name: Matt Bohn
   address1: 202 Lazywoods Rd
   address2: Felton CA 95018 (Santa Cruz)
   phone1: 831-335-1281
@@ -16,6 +18,7 @@ two:
   
 three:
   name: Bob’s House of Basses
+  mailing_name: Bob Kurz
   address1: 12301 Shaffer Ln
   address2: Bowie MD 20720
   phone1: 888-289-9877
@@ -23,6 +26,7 @@ three:
   
 four:
   name: The Cincinnati Bass Cellar
+  mailing_name: 
   address1: 3016 Harrison Ave.
   address2: Cincinnati, OH 45211
   phone1: 513-661-6224
@@ -30,6 +34,7 @@ four:
   
 five:
   name: Heartland String Bass Shop
+  mailing_name: Chris Threlkeld
   address1: 45 N 7th Ave
   address2: Iowa City IA 52245
   phone1: 800-730-3822
@@ -37,7 +42,32 @@ five:
   
 six:
   name: The Loft Violin Shop
+  mailing_name: 
   address1: 4604 N High St
   address2: Columbus, OH 43214
   phone1: 614-267-7221
   website: www.theloftviolinshop.com
+  
+seven:
+  name: New Standard Instrument Co
+  mailing_name: Will DeSola
+  address1: 31 Edith Ln
+  address2: Wilton CT 06897
+  phone1: 203-762-2044
+  website: www.newstandardbass.com 
+  
+eight:
+  name: Nick LLoyd Basses
+  mailing_name: 
+  address1: 4185 Hamilton #2
+  address2: Cincinnati, OH 45223
+  phone1: 513-681-1863
+  website: www.nicklloydbasses.com
+  
+eight:
+  name: Steven Reiley at Guaneri House
+  mailing_name: 
+  address1: 221 John NE
+  address2: Grand Rapids, MI 49503
+  phone1: 616-451-4960
+  website: www.guarnerihouse.com
