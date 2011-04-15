@@ -1,0 +1,43 @@
+# the order of these distributors is not important
+
+one:
+   name: A&G Music Products Co.
+   address1: 564 14th St
+   address2: Oakland, CA 94612
+   phone1: 510-832-2452
+   website: www.agmusic.com
+   
+two:
+  name: The Bass Doctor
+  address1: 202 Lazywoods Rd
+  address2: Felton CA 95018 (Santa Cruz)
+  phone1: 831-335-1281
+  website: www.thebassdoc.com 
+  
+three:
+  name: Bob’s House of Basses
+  address1: 12301 Shaffer Ln
+  address2: Bowie MD 20720
+  phone1: 888-289-9877
+  website: www.bobshouseofbasses.com 
+  
+four:
+  name: The Cincinnati Bass Cellar
+  address1: 3016 Harrison Ave.
+  address2: Cincinnati, OH 45211
+  phone1: 513-661-6224
+  website: www.basscellar.com
+  
+five:
+  name: Heartland String Bass Shop
+  address1: 45 N 7th Ave
+  address2: Iowa City IA 52245
+  phone1: 800-730-3822
+  website: www.heartlandsbs.com
+  
+six:
+  name: The Loft Violin Shop
+  address1: 4604 N High St
+  address2: Columbus, OH 43214
+  phone1: 614-267-7221
+  website: www.theloftviolinshop.com
