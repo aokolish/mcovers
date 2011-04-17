@@ -13,9 +13,9 @@
 	padding: 30px;
 }
 
-.sizes .intro h1,
+#primary-content h1,
 .index #touts h1,
-.index .intro h1 {
+.intro h1 {
 	font-size: 36px;
 	padding-bottom: 5px;
 	border-bottom: 1px solid #000;
@@ -91,22 +91,93 @@
 	clear: both;
 }
 
-.sizes .divider h1 {
+.sizes #primary-content .divider h1 {
 	text-align: center;
 	background-color: transparent;
+	border: none;
 }
-/*.sizes .content-wrap > h1 {
-	clear: both;
+
+.sizes .sizes-table {
+	font-family: Georgia, arial, serif;
+	border-collapse: collapse;
+	background: #FFF;
+	margin-top: 25px;
+	width: 940px;
+}
+
+.sizes .sizes-table tr {
+	padding: 0 10px;
+}
+
+.sizes .sizes-table thead tr {
+	border-bottom: 1px solid #BBB;
+}
+
+.sizes .sizes-table thead tr th:first-child {
+	text-align: right;
+}
+
+.sizes .sizes-table thead tr th {
+	padding: 20px 15px 15px;
+}
+
+.sizes .sizes-table tr th:first-child {
+	padding-left: 30px;
+}
+
+.sizes .sizes-table tr th:last-child {
+	padding-right: 30px;
+}
+
+.sizes .sizes-table td, th {
+	padding: 7px 7px;
+	border-left: 1px solid #BBB;
+}
+
+.sizes .sizes-table tr th:first-child {
+	border-left: none;
+}
+
+.sizes .sizes-table td {
 	text-align: center;
-}*/
-
-.sizes .sizes {
-	clear: both;
-	height: 200px;
 }
 
-.rounded {
-	border-radius: 18px;
+.sizes .sizes-table tbody th {
+	text-align: right;
+	margin: 10px;
+	padding-right: 25px;
+}
+
+.sizes .sizes-table tbody tr:nth-child(2n+2) {
+	/*gray bg for even rows*/
+	background: #EEE;
+}
+
+.sizes .sizes-table tbody tr:nth-child(-n+14):hover {
+	/*
+		Will not work in all browsers - 
+		Makes all rows except the first and last ones clickable
+	*/
+	cursor: pointer;
+}
+
+.sizes .sizes-table tbody tr.selected,
+.sizes .sizes-table tbody tr.highlight {
+	/*added via js*/
+	background: #FAE991;
+}
+
+.sizes .sizes-table tr.last td {
+	text-align: left;
+	font-size: smaller;
+	padding: 10px 40px 20px 25px;
+	border-top: 1px solid #BBB;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	-moz-border-radius-bottomright: 20px;		
+	background: #FFF;
+	border-left: none;
 }
 
 /*************
@@ -147,3 +218,63 @@
 /*************
 	Custom
 *************/
+
+.custom .column1 {
+	width: 460px;
+	float: left;
+}
+
+.custom .column2 {
+	width: 380px;
+	float: right;
+}
+
+.custom .prices {
+	margin-top: 60px;
+	height: 300px;
+}
+
+.custom .features h1 {
+	margin-bottom: 15px;
+}
+
+.custom .features p {
+	font-size: 28px;
+	font-family: 'Lobster', arial, serif;;
+	line-height: 78px;
+	background: url("../images/checkmark.png") 300px 18px no-repeat;
+}
+
+.custom .features p span {
+	font-size: 14px;
+	font-family: Georgia, arial, serif;
+}
+
+.custom .colors {
+	margin-top: 60px;
+}
+
+.custom .colors > div {
+	margin-top: 15px;
+	overflow: hidden;
+	position: relative;
+}
+
+.custom .colors h2 {
+	float: left;
+	padding: 67px 0 67px 15px;
+	font-size: 26px;
+	font-weight: normal;
+}
+.custom .colors img {
+	float: right;
+}
+
+.custom .colors .custom-colors {
+	margin-top: 25px;
+}
+
+.custom .colors .custom-colors p {
+	font-size: 16px;
+	padding-top: 15px;
+}

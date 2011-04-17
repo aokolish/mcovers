@@ -29,22 +29,26 @@ h1 {
 }
 
 #primary-content {
+/*	overflow:hidden so that floated elements 
+	cause this to expand in height */
 	background: #D1D1D1 url("../images/gray_bg.gif") repeat;
+	padding-bottom: 60px;
+	overflow: hidden;
 }
 
 #primary-content .content-wrap {
 	width: 940px;
 	margin: 0 auto;
-	padding: 56px 0px 60px;
+	padding: 56px 0px 0;
 }
 
-/*rounded corners and drop shadow behind all copy
+/*rounded corners and drop shadow behind copy
 	used on every page*/
+.sizes .sizes-table,
 .index #touts div, 
-.distributors .intro,
-.sizes .intro,
-.distributors #accordion,	
-.index .intro {
+.intro,
+.custom .content-wrap > div > div,
+.distributors #accordion {
 	background: white;
 	padding: 25px;
 	border-radius: 18px;
@@ -53,9 +57,8 @@ h1 {
 }
 
 /*typical padding for p tag */
-.sizes .intro p,
-.index .intro p,
-.distributors .intro p,
+.intro p,
+.custom .prices,
 .index #touts p {
 	padding-top: 15px;
 }
@@ -76,6 +79,7 @@ h1 {
 
 #logo {
 	padding: 18px 0px 0px 10px;
+	float: left;
 }
 
 #header ul.semantic-navigation {

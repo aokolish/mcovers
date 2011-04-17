@@ -1,2 +1,49 @@
-<h1>Static#sizes</h1>
-<p>Find me in app/views/static/sizes.html.erb</p>
+<div class="intro rounded">
+	<h1>Standard Sizes</h1>
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nos esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nos esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+	<p>Ut wisi enim ad minim veniam, quis nos esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nos esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.  dolore eu feugiat nulla facilisis at vero eros et acumen.</p>
+	
+	<h1>Measure Your Bass</h1>
+	<p>There are four measurements that I use for sizing my cases.  The graphic to the right shows all four of them.  
+			To determine that bag size that will best fit your bass, write down the dimensions of your instrument and find 
+			the appropriate size using the table below.  If you cannot find a standard size that is a close match, you 
+			should consider a <a href="#">custom bag</a>.
+	</p>
+		
+	<h1>Prices</h1>	
+	<ul>
+		<li>3/4 Bags</li>
+		<li>4/4 Bags</li>
+		<li>Custom 3/4</li>
+		<li>Custom 4/4</li>
+	</ul>
+	
+	<ul class="prices">
+		<li>$395</li>
+		<li>$415</li>
+		<li>$470</li>
+		<li>$490</li>
+	</ul>			
+</div>
+
+<%= image_tag("bass_dimensioned.png") %>
+
+<div class="divider"><h1>Pick Your Size</h1></div>
+
+<table class="sizes-table">
+	<thead>
+		<tr>
+			<th>Stock Sizes</th>
+			<th>A - Full Height</th>
+			<th>B - Body Height</th>
+			<th>C - Upper Bout</th>
+			<th>D - Lower Bout</th>
+		</tr>
+	</thead>
+	<tbody>
+		<%= render(:partial => 'partials/size', :collection => @sizes) %>
+		<tr class="last">
+			<td colspan="5">* All measurements are in inches
+		</tr>
+	</tbody>
+</table>
