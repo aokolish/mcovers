@@ -73,4 +73,14 @@ $(document).ready(function() {
         );
     }
 
+		$('.sizes-table tbody tr:nth-child(-n+14)').click(function() {	
+			$(this).toggleClass('selected');
+		});
+		
+		$('.sizes-table tbody tr:nth-child(-n+14)').hover(function() { 
+			$(this).addClass('highlight');
+		}, function() { 
+			$(this).removeClass('highlight');
+		});
+
 });
