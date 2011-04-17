@@ -13,7 +13,7 @@
 	cursor: pointer; 
 	font-weight: normal;
 	position: relative; 
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid #666;
 	margin-top: 1px; 
 	zoom: 1; 
 }
@@ -43,7 +43,7 @@
 
 .ui-state-default .ui-icon { background-image: url("../images/ui-icons_ffffff_256x240.png"); }
 .ui-state-active .ui-icon {background-image: url("../images/ui-icons_ffffff_256x240.png"); }
-.ui-icon { width: 16px; height: 16px; background-image: url(images/ui-icons_222222_256x240.png); }
+.ui-icon { width: 16px; height: 16px; }
 .ui-icon-triangle-1-n { background-position: 0 -16px; }
 .ui-icon-triangle-1-ne { background-position: -16px -16px; }
 .ui-icon-triangle-1-e { background-position: -32px -16px; }
@@ -58,7 +58,7 @@
 .ui-accordion { width: 100%; }
 .ui-accordion .ui-accordion-li-fix { display: inline; }
 .ui-accordion .ui-accordion-header-active { border-bottom: 0 !important; }
-.ui-accordion-icons .ui-accordion-header a { padding-left: 2.2em; }
-.ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px; }
-.ui-accordion .ui-accordion-content { padding: 1em 2.2em; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none; zoom: 1; }
+.ui-accordion-icons .ui-accordion-header a { padding-left: 3.2em; }
+.ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: .8em; top: 50%; margin-top: -8px; }
+.ui-accordion .ui-accordion-content { padding: 1em 3em; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none; zoom: 1; }
 .ui-accordion .ui-accordion-content-active { display: block; }
