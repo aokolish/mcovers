@@ -1,0 +1,149 @@
+/*************
+	HomePage
+*************/
+
+.index .content-wrap {
+	background: url("../images/dave_with_bag.png") 35px 18px no-repeat;
+}
+
+.index .intro {
+	float: right;
+	width: 410px;
+	margin-left: 500px;
+	padding: 30px;
+}
+
+.sizes .intro h1,
+.index #touts h1,
+.index .intro h1 {
+	font-size: 36px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #000;
+}
+
+.index #touts {
+	clear: both;
+	height: 357px;
+}
+
+.index #touts div {
+	float: right;
+	width: 250px;
+	margin: 74px 0 0 20px;
+}
+
+.index #touts .last {
+	margin-left: 0px;
+}
+
+.index #touts h1 {
+	text-align: center;
+}
+
+/*************
+	Construction
+*************/
+
+/*************
+	Gallery
+*************/
+
+/*************
+	Sizes
+*************/
+
+.sizes .intro {
+	float: left;
+	width: 410px;
+}
+
+.sizes .intro h1 {
+	padding-top: 25px;
+}
+
+.sizes .intro h1:first-child {
+	padding-top: 0;
+}
+
+.sizes .intro ul {
+	float: left;
+	width: 125px;
+	padding-top: 10px;
+	list-style-type: none;
+	font-size: 18px;
+	font-family: Georgia, arial, serif;;
+	line-height: 25px;
+}
+
+.sizes .intro ul.prices li:before {
+	content: "-";
+	margin-right: 35px;
+}
+
+.sizes #primary-content img {
+	float: right;
+	position: relative;
+	top: -30px;
+}
+
+.sizes .divider {
+	background: url("../images/sizes_header_bg.png") center no-repeat;
+	clear: both;
+}
+
+.sizes .divider h1 {
+	text-align: center;
+	background-color: transparent;
+}
+/*.sizes .content-wrap > h1 {
+	clear: both;
+	text-align: center;
+}*/
+
+.sizes .sizes {
+	clear: both;
+	height: 200px;
+}
+
+.rounded {
+	border-radius: 18px;
+}
+
+/*************
+	Distributors
+*************/
+.distributors .intro {
+	margin: 0 60px 135px 0;
+	width: 330px;
+	float: left;
+}
+
+.distributors .intro h1 {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #000;
+}
+
+.distributors #accordion {
+	width: 460px;
+	padding: 0;
+	margin-bottom: 60px;
+	float: right;
+	border: 1px solid black;
+	background: black url("../images/accordian_bg.png") no-repeat;
+}
+
+#map_canvas { 
+	clear: both;
+	height: 450px; 
+	width: 960px; 
+	font-family: Arial, sans-serif;
+}
+
+#map_canvas .info { 
+	font-size: 14px;
+	display: block;
+}
+	
+/*************
+	Custom
+*************/
