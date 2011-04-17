@@ -1,0 +1,15 @@
+<div>
+	<h3><a href="#"><%= dist['name'] %></a></h3>
+	<div>
+		<% unless dist['mailing_name'].nil? %>
+			<p><%= dist['mailing_name'] %></p>
+		<% end %>
+		<p><%= dist['address1'] %></p>
+		<p><%= dist['address2'] %></p>
+		<p><%= dist['phone1'] %></p><br />
+		<p>
+			<a href="http://<%= dist['website'] %>" target="_blank">
+			<%= dist['website'] %></a>
+		</p>
+	</div>
+</div>
