@@ -7,6 +7,8 @@ one:
    address2: Oakland, CA 94612
    phone1: 510-832-2452
    website: www.agmusic.com
+   lat: 37.8056014
+   lon: -122.2743443
    
 two:
   name: The Bass Doctor
@@ -15,6 +17,8 @@ two:
   address2: Felton CA 95018 (Santa Cruz)
   phone1: 831-335-1281
   website: www.thebassdoc.com 
+  lat: 37.066083
+  lon: -122.078062
   
 three:
   name: Bob’s House of Basses
@@ -23,6 +27,8 @@ three:
   address2: Bowie MD 20720
   phone1: 888-289-9877
   website: www.bobshouseofbasses.com 
+  lat: 38.987076
+  lon: -76.792751
   
 four:
   name: The Cincinnati Bass Cellar
@@ -31,6 +37,8 @@ four:
   address2: Cincinnati, OH 45211
   phone1: 513-661-6224
   website: www.basscellar.com
+  lat: 39.1484956
+  lon: -84.598031
   
 five:
   name: Heartland String Bass Shop
@@ -39,6 +47,8 @@ five:
   address2: Iowa City IA 52245
   phone1: 800-730-3822
   website: www.heartlandsbs.com
+  lat: 41.662427
+  lon: -91.512043
   
 six:
   name: The Loft Violin Shop
@@ -47,6 +57,8 @@ six:
   address2: Columbus, OH 43214
   phone1: 614-267-7221
   website: www.theloftviolinshop.com
+  lat: 40.0560649
+  lon: -83.0194269
   
 seven:
   name: New Standard Instrument Co
@@ -55,6 +67,8 @@ seven:
   address2: Wilton CT 06897
   phone1: 203-762-2044
   website: www.newstandardbass.com 
+  lat: 41.1641135
+  lon: -73.4249774
   
 eight:
   name: Nick LLoyd Basses
@@ -63,11 +77,15 @@ eight:
   address2: Cincinnati, OH 45223
   phone1: 513-681-1863
   website: www.nicklloydbasses.com
+  lat: 39.1628618
+  lon: -84.5398662
   
-eight:
+nine:
   name: Steven Reiley at Guaneri House
   mailing_name: 
   address1: 221 John NE
   address2: Grand Rapids, MI 49503
   phone1: 616-451-4960
   website: www.guarnerihouse.com
+  lat: 42.964613
+  lon: -85.662771
