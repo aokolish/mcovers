@@ -44,6 +44,89 @@
 	Construction
 *************/
 
+.construction .content-wrap {
+	position: relative;
+}
+
+.construction .intro {
+	width: 675px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.construction .intro .one,
+.construction .intro .two {
+	float: left;
+}
+
+.construction .intro .one {
+	width: 270px;
+}
+
+.construction .intro .two {
+	width: 380px;
+	padding-left: 15px;
+}
+
+.construction .intro h2 {
+	font-family: Georgia, arial, serif;
+	font-size: 18px;
+	font-weight: normal;
+	padding-top: 15px;
+}
+
+.construction .intro .two h2,
+.construction .intro .two p {
+	width: 275px;
+}
+
+.construction .intro .two h2:first-child,
+.construction .intro .two p:first-of-type {
+	width: 100%;
+}
+
+.construction .intro .two h2.last,
+.construction .intro .two p.last {
+	width: 220px;
+}
+
+.construction .intro #bass {
+	position: absolute;
+	top: 25px;
+	right: 0;
+}
+
+.construction #features {
+	margin-top: 60px;
+	overflow: hidden;
+}
+
+.construction #features .feature {
+	float: left;
+	width: 280px;
+	margin: 25px 20px 0 0;
+}
+
+.construction #features div.last {
+	margin-right: 0;
+}
+
+.construction #features img {
+	border-radius: 18px;
+	width: 280px;
+	height: 280px;
+}
+
+.construction #features h2 {
+	font-size: 18px;
+	font-weight: normal;
+	margin-top: 15px;
+}
+
+.construction #features p {
+	margin-top: 10px;
+}
+
 /*************
 	Gallery
 *************/
@@ -129,7 +212,8 @@
 	padding-right: 30px;
 }
 
-.sizes .sizes-table td, th {
+.sizes .sizes-table td,
+.sizes .sizes-table th {
 	padding: 7px 7px;
 	border-left: 1px solid #BBB;
 }
@@ -231,8 +315,54 @@
 
 .custom .prices {
 	margin-top: 60px;
-	height: 300px;
 }
+
+.custom .prices table {
+	width: 350px;
+	font-family: Georgia, arial, serif;
+	margin-top: 25px;
+}
+
+.custom .prices thead {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.custom .prices thead th {
+	font-weight: normal;
+	text-decoration: underline;
+	text-align: right;
+}
+
+.custom .prices thead th:first-child {
+	text-align: left;
+}
+
+.custom .prices tbody tr td {
+	padding: 2px 0 2px 20px;
+	text-align: right;
+}
+
+.custom .prices tbody tr:first-child td,
+.custom .prices tr.color td {
+	padding-top: 20px;
+}
+
+.custom .prices tr td:first-child {
+	text-align: left;
+	padding-left: 0;
+}
+
+.custom .prices tr.last th {
+	text-align: right;
+	font-weight: normal;
+	padding: 10px 0;
+}
+
+.custom .prices tr.last td {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+} 
 
 .custom .features h1 {
 	margin-bottom: 15px;
@@ -277,4 +407,9 @@
 .custom .colors .custom-colors p {
 	font-size: 16px;
 	padding-top: 15px;
+}
+
+.custom .prices p {
+	padding-top: 8px;
+	font-size: 12px;
 }
