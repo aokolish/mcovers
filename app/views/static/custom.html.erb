@@ -1,2 +1,97 @@
-<h1>Static#custom</h1>
-<p>Find me in app/views/static/custom.html.erb</p>
+<div class="column1">
+	<div class="intro">
+		<h1>Our Customs</h1>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nos esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nos esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
+		<p>Ut wisi enim ad minim veniam, quis nos esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nos esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.  dolore eu feugiat nulla facilisis at vero eros et acumen</p>
+	</div>
+	
+	<div class="prices">
+		<h1>Prices</h1>
+			<div class="options">
+				<form>
+					<table>
+						<thead>
+							<tr>
+								<th>Options</th>
+								<th>Prices</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<input type="radio" name="size" value="three_quarter" id="three_quarter" checked>
+									<label for="three_quarter">3/4 ($470)</label>
+								</td>
+								<td>
+									$470
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="radio" name="size" value="full_size" id="full_size">
+									<label for="full_size">4/4 ($490)</label>
+								</td>
+								<td>
+									$490
+								</td>
+							</tr>
+							<tr class="color">
+								<td>
+									<input type="checkbox" name="custom_color" id="custom_color">
+									<label for="custom_color">Custom Color ($40)</label>
+								</td>
+								<td>
+									$40
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" name="custom_pockets" id="custom_pockets">
+									<label for="custom_pockets">Custom Pockets (price varies)</label>
+								</td>
+								<td>
+									?
+								</td>
+							</tr>
+							<tr class="last">
+								<th>Total*</th>
+								<td>$470</td>
+							</tr>
+						</tbody>
+					</table>
+					</form>
+					<p>*This is an estimate. Prices are subject to change.</p>
+			</div>
+	</div>
+</div>
+
+<div class="column2">
+	<div class="features">
+		<h1>Features</h1>
+		<p>Custom Fit</p>
+		<p>Custom Colors <span>(optional)</span></p>
+		<p>Custom Pockets <span>(optional)</span></p>
+	</div>
+	
+	<div class="colors">
+		<h1>Stock Colors</h1>
+		<div>
+			<h2>Black</h2>
+			<%= image_tag("black_swatch.png") %>
+		</div>
+		<div>
+			<h2>Dark Blue</h2>
+			<%= image_tag("blue_swatch.png") %>
+		</div>
+		<div>
+			<h2>Burgandy</h2>
+			<%= image_tag("burgandy_swatch.png") %>
+		</div>
+		
+		<div class="custom-colors">
+			<h1>Custom Colors</h1>
+			<p>Please call/email me for the current selection of colors.</p>
+		</div>
+	</div>
+	
+</div>
