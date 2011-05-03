@@ -131,6 +131,43 @@
 	Gallery
 *************/
 
+.gallery #primary-content .content-wrap {
+	width: 880px;
+}
+
+.gallery #primary-content h1 {
+	border: none;
+	text-align: center;
+	background: url("../images/gallery_header_bg.png") center no-repeat;
+	margin-bottom: 25px;
+}
+
+.gallery #primary-content a.cboxElement {
+	width: 160px;
+	height: 160px;	
+	text-decoration: none;
+}
+
+.gallery #primary-content a.cboxElement:hover {
+	text-decoration: none;
+	/*
+		TODO determine the real hover state of this element
+	*/
+	opacity: .8;
+}
+
+.gallery #primary-content img {
+	border-radius: 18px;
+	width: 160px;
+	height: 160px;
+/*	margin-right: 17px;*/
+	margin: 0 17px 17px 0;
+}
+
+.gallery #primary-content img.last {
+	margin-right: 0;
+}
+
 /*************
 	Sizes
 *************/
@@ -391,6 +428,7 @@
 }
 
 .custom .colors h2 {
+	font-family: 'Lobster', arial, serif;
 	float: left;
 	padding: 67px 0 67px 15px;
 	font-size: 26px;
