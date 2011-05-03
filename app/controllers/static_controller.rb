@@ -1,43 +1,56 @@
 class StaticController < ApplicationController
   caches_page :index, :construction, :gallery, :distributors, :sizes, :custom   
   require 'yaml'
-  
-  # TODO: get rounded corners working in older versions of IE
-  # there has to be a reasonable way of doing this
+  before_filter :set_defaults
     
   def index
     @title = 'home'
+    @header = 'Bass Bags Built To Last'
     #TODO: put keywords here for SEO
-    @keywords = ''  
+    # @keywords = ''  
   end
 
   def construction
-    @title = 'construction'
+    @header = 'Product Construction'
   end
 
   def gallery
-    @title = 'gallery'
+    @thumbs = []
+    Dir.foreach("#{Rails.root}/public/images/gallery/thumbs") do |thumb|
+      if thumb =~ /.jpg/
+        @thumbs.push(thumb)
+      end
+    end
+    # data structure that I think I need
+    # @thumbs = [ ['foo', { :class => 'bar', :title => nil }], 
+    #             ['baz', { :class => 'asdf', :title => 'asdf' }],
+    #             ['bar', { :clas => 'asdf', :title => nil}]]
   end
 
   def distributors
-    @title = 'distributors'          
-    @distributors = YAML.load_file("#{RAILS_ROOT}/config/distributors.yml").values.sort do |x, y|                                                                                         
+    @distributors = YAML.load_file("#{Rails.root}/config/distributors.yml").values.sort do |x, y|                                                                                         
       x['name'].sub(/^(the|a|an)\s/i, '') <=> y['name'].sub(/^(the|a|an)\s/i, '')    
     end
   end
 
   def sizes
-    @title = 'sizes'
-    @sizes = YAML.load_file("#{RAILS_ROOT}/config/sizes.yml").sort {|a,b| a[0]<=>b[0]}
+    # user outermost keys for sorting
+    @sizes = YAML.load_file("#{Rails.root}/config/sizes.yml").sort {|a,b| a[0]<=>b[0]}
     
-    #done with the keys, just need them for the purpose of sorting my hash
-    #flatten array, then pull out the even values (the hashes)
-    @sizes = @sizes.flatten   
+    #flatten array, then pull out the even values (avoiding the keys)
+    @sizes.flatten!   
     @sizes = @sizes.values_at(*(1...@sizes.size).step(2))
   end
 
   def custom
-    @title = 'custom'
+    @header = 'Custom Bags'
+  end
+  
+  private
+  
+  def set_defaults
+    @header = params[:action].titleize 
+    @title = params[:action]
   end
 
 end
