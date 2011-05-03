@@ -3,3 +3,5 @@ db/*.sqlite3
 log/*.log
 tmp/**/*
 public/cache/*
+public/stylesheets/all.css
+public/javascripts/all.js
