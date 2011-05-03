@@ -98,7 +98,7 @@ var Distributors = (function() {
 //
 var Custom = (function() {
 	
-	function addPrice() {
+	function calculateTotal() {
 		// add up the price of the bag based on the options selected
 		var checkedInputs = $('div.prices input:checked'), 
 				prices = [],
@@ -153,7 +153,7 @@ var Custom = (function() {
 					price.hide();
 				}
 				
-				addPrice();
+				calculateTotal();
 
 			});
 			
@@ -167,6 +167,14 @@ var Custom = (function() {
 //
 var Gallery = (function() {
 
+	return {
+		init: function () {
+
+			$('.content-wrap > a').colorbox({ maxHeight : "80%" });
+
+		}
+	}
+	
 })()
 
 //
