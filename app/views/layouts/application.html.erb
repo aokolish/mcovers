@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<%= render(:partial => 'partials/head') %>
-	<!-- 
-	TODO: ADD GOOGLE ANALYTICS 
-	-->
-</head>
+<%= render(:partial => 'partials/head') %>
 
 <body class="<%= "#{params[:action]}" %>">
 		
 	<div id="header">
 		<div class="header-content">
-			<a href="/"><%= image_tag("logo.png", :id => 'logo') %></a>
+			<%= link_to image_tag("logo.png", :id => 'logo'), "/" %>
 			<% semantic_navigation :main do |n| %>
 		      <%= n.item 'Home', :link => '/' %>
 		      <%= n.item 'Construction' %>
@@ -20,11 +15,12 @@
 					<%= n.item 'Sizes' %>
 					<%= n.item 'Custom' %>
 		  <% end %>
+		
 		</div>
 	</div>
 
 	<div id="sub-header">
-		<h1>Bass Bags Built To Last</h1>
+		<h1><%= @header %></h1>
 	</div>
 	<div class="sub-header-shadow"></div>				
 
@@ -37,6 +33,6 @@
 	
 	<%= render(:partial => 'partials/footer') %>
 	
-  <%= javascript_include_tag 'jquery-1.5.2.min', 'application', 'jquery-ui-1.8.11.custom.min', 'curvycorners', :cache => true	 %>
+  <%= javascript_include_tag 'jquery-1.5.2.min', 'jquery-ui-1.8.12.custom.min', 'curvycorners', 'jquery.colorbox-min', 'application', :cache => true	 %>
 </body>
 </html>
