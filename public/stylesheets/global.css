@@ -15,7 +15,9 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 /*TODO: get rounded corners working in older versions of IE
 there has to be a reasonable way of doing this*/
 
-/*TODO: make sub_header shorter??*/
+/*
+	TODO : crush png's with some sort of tool
+*/
 
 body {
 	font-family: 'Lobster', arial, serif;
@@ -38,9 +40,7 @@ h2 {
 }
 
 #primary-content {
-/*	overflow:hidden so that floated elements 
-	cause this to expand in height */
-	background: #D1D1D1 url("../images/gray_bg.gif") repeat;
+	background: #D1D1D1 url("../images/gray_bg.png") repeat;
 	padding-bottom: 60px;
 	overflow: hidden;
 }
@@ -66,7 +66,6 @@ h2 {
 	box-shadow: 2px 2px 23px rgba(0,0,0,0.4);
 }
 
-/*typical padding for p tag */
 .intro p,
 .custom .prices,
 .index #touts p {
@@ -107,13 +106,17 @@ h2 {
 #header ul.semantic-navigation li a {
 	color: white;
 	text-decoration: none;
+	padding-bottom: 13px;
 }
 
 #header ul.semantic-navigation li.highlighted a,
 #header ul.semantic-navigation li a:hover {
-	padding-bottom: 13px;
 	border-bottom: 2px solid #9CB6F7;
 	color: #9CB6F7;
+}
+
+#header ul.semantic-navigation li a:hover {
+	-webkit-transition: all 0.3s linear;
 }
 
 #sub-header {
