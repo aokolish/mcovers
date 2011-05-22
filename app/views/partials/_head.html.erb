@@ -2,7 +2,8 @@
 	<meta charset=utf-8>
 	<title>Messina Covers - <%= @title || params[:action] %></title>
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-	<%= stylesheet_link_tag 'global', 'static', 'accordion', 'colorbox', :cache => true %>
+<%# <%= stylesheet_link_tag 'global', 'static', 'accordion', 'colorbox', :cache => true %>
+	<%= stylesheet_link_tag 'global', 'static', 'accordion', 'colorbox' %>
 
 	<% if params[:action] == 'distributors' %>
 		<%# Only include google maps api on this page %>
