@@ -20,7 +20,7 @@
 	</div>
 
 	<div id="sub-header">
-		<h1><%= @header %></h1>
+		<h1><%= @header || params[:action].titleize %></h1>
 	</div>
 	<div class="sub-header-shadow"></div>				
 
