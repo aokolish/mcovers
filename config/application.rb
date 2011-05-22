@@ -40,6 +40,9 @@ module MessinaCovers
     config.filter_parameters += [:password]
     
     # HEROKU CREDENTIALS:
-    # http://empty-stone-875.heroku.com/ | git@heroku.com:empty-stone-875.git
+    # http://mcovers.heroku.com/ | git@heroku.com:mcovers.git
+    
+    # how to push code to heroku:
+    # git push heroku
   end
 end
