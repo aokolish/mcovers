@@ -38,5 +38,8 @@ module MessinaCovers
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+    
+    # HEROKU CREDENTIALS:
+    # http://empty-stone-875.heroku.com/ | git@heroku.com:empty-stone-875.git
   end
 end
