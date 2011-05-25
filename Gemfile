@@ -6,6 +6,8 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'navigasmic'
 
+gem 'jammit'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
