@@ -44,5 +44,9 @@ module MessinaCovers
     
     # how to push code to heroku:
     # git push heroku
+    
+    # how to add the domain
+    # heroku domains:add messinacovers.net
+    # heroku domains:add www.messinacovers.net
   end
 end

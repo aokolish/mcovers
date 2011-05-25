@@ -1,3 +1,7 @@
+/*!
+ * application.js
+ */
+
 $(function() {
 	
 	var page = $('body').attr('class');
