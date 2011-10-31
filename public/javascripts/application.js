@@ -4,8 +4,10 @@
 
 $(function() {
 	
-	$('#header li a').pjax('[data-pjax-container]', {
-		success: function() {
+	$('#header li a').pjax('[data-pjax-container]');
+	
+	$('div.content-wrap')
+		.bind('pjax:end',   function() { 
 			var action = window.location.pathname; 
 			
 			// determine the action (would normally be done server-side)
@@ -21,8 +23,7 @@ $(function() {
 			
 			$('body').attr('class', action);
 			initialize();
-		}
-	});
+		});
 	
 	function initialize()  {
 		var page = $('body').attr('class');
