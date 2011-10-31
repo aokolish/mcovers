@@ -4,22 +4,44 @@
 
 $(function() {
 	
-	var page = $('body').attr('class');
+	$('#header li a').pjax('[data-pjax-container]', {
+		success: function() {
+			var action = window.location.pathname; 
+			
+			// determine the action (would normally be done server-side)
+			if (action.length <= 1) {
+				// have to treat root specially
+				action = 'index';
+			} else {
+				action = action.replace('/', '');
+			}
+			
+			$('#header li').removeClass('highlighted');
+			$('#header li a[href$="'+action+'"]').parent('li').addClass('highlighted');
+			
+			$('body').attr('class', action);
+			initialize();
+		}
+	});
+	
+	function initialize()  {
+		var page = $('body').attr('class');
 
-	//call appropriate module's init method
-	switch (page) {
-		case "distributors":
-			Distributors.init();
-			break;
-		case "custom":
-			Custom.init();
-			break;
-		case "gallery":
-			Gallery.init();
-			break;
-		case "sizes":
-			Sizes.init();
-			break;
+		//call appropriate module's init method
+		switch (page) {
+			case "distributors":
+				Distributors.init();
+				break;
+			case "custom":
+				Custom.init();
+				break;
+			case "gallery":
+				Gallery.init();
+				break;
+			case "sizes":
+				Sizes.init();
+				break;
+		}
 	}
 
 });

@@ -8,6 +8,8 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 module MessinaCovers
   class Application < Rails::Application
+    
+    config.middleware.use Rack::Pjax
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -43,6 +45,7 @@ module MessinaCovers
     # http://mcovers.heroku.com/ | git@heroku.com:mcovers.git
     
     # how to push code to heroku:
+    # USE JAMMIT FIRST IF YOU CHANGE A STATIC FILE
     # git push heroku
     
     # how to add the domain
