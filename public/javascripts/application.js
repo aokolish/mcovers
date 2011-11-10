@@ -2,6 +2,8 @@
  * application.js
  */
 
+var MC = {};
+
 $(function() {
 	
 	$('#header li a').pjax('[data-pjax-container]');
@@ -27,22 +29,24 @@ $(function() {
 	
 	function initialize()  {
 		var page = $('body').attr('class');
+		
+		MC[page].init();
 
 		//call appropriate module's init method
-		switch (page) {
-			case "distributors":
-				Distributors.init();
-				break;
-			case "custom":
-				Custom.init();
-				break;
-			case "gallery":
-				Gallery.init();
-				break;
-			case "sizes":
-				Sizes.init();
-				break;
-		}
+		// switch (page) {
+		// 			case "distributors":
+		// 				distributors.init();
+		// 				break;
+		// 			case "custom":
+		// 				custom.init();
+		// 				break;
+		// 			case "gallery":
+		// 				gallery.init();
+		// 				break;
+		// 			case "sizes":
+		// 				sizes.init();
+		// 				break;
+		// 		}
 	}
 
 });
@@ -50,7 +54,7 @@ $(function() {
 //
 //Distributors page
 //
-var Distributors = (function() {
+MC.distributors = (function() {
 	
 	return {
 		init: function() {
@@ -123,7 +127,7 @@ var Distributors = (function() {
 //
 //Custom page
 //
-var Custom = (function() {
+MC.custom = (function() {
 	
 	function calculateTotal() {
 		// add up the price of the bag based on the options selected
@@ -192,7 +196,7 @@ var Custom = (function() {
 //
 //Gallery page
 //
-var Gallery = (function() {
+MC.gallery = (function() {
 
 	return {
 		init: function () {
@@ -207,7 +211,7 @@ var Gallery = (function() {
 //
 //Sizes page
 //
-var Sizes = (function() {
+MC.sizes = (function() {
 		
 	return {
 		init: function() {
