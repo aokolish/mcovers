@@ -2,6 +2,6 @@
 		the assumption is that each thumbnail image links to a full version of its
 		image that has the same name and is located in the 'gallery' directory 
 %>
-<a href="<%= image_path("gallery/#{thumb}") %>" rel="gallery" title="put a real title here">
+<a href="<%= image_path("gallery/#{thumb}") %>" rel="gallery" title="">
 	<%= image_tag "/images/gallery/thumbs/#{thumb}", :class => cycle(nil,nil,nil,nil,'last') %>
 </a>
