@@ -2,51 +2,24 @@
  * application.js
  */
 
-var MC = {};
-
 $(function() {
 	
-	$('#header li a').pjax('[data-pjax-container]');
-	
-	$('div.content-wrap')
-		.bind('pjax:end',   function() { 
-			var action = window.location.pathname; 
-			
-			// determine the action (would normally be done server-side)
-			if (action.length <= 1) {
-				// have to treat root specially
-				action = 'index';
-			} else {
-				action = action.replace('/', '');
-			}
-			
-			$('#header li').removeClass('highlighted');
-			$('#header li a[href$="'+action+'"]').parent('li').addClass('highlighted');
-			
-			$('body').attr('class', action);
-			initialize();
-		});
-	
-	function initialize()  {
-		var page = $('body').attr('class');
-		
-		MC[page].init();
+	var page = $('body').attr('class');
 
-		//call appropriate module's init method
-		// switch (page) {
-		// 			case "distributors":
-		// 				distributors.init();
-		// 				break;
-		// 			case "custom":
-		// 				custom.init();
-		// 				break;
-		// 			case "gallery":
-		// 				gallery.init();
-		// 				break;
-		// 			case "sizes":
-		// 				sizes.init();
-		// 				break;
-		// 		}
+	//call appropriate module's init method
+	switch (page) {
+		case "distributors":
+			Distributors.init();
+			break;
+		case "custom":
+			Custom.init();
+			break;
+		case "gallery":
+			Gallery.init();
+			break;
+		case "sizes":
+			Sizes.init();
+			break;
 	}
 
 });
@@ -54,7 +27,7 @@ $(function() {
 //
 //Distributors page
 //
-MC.distributors = (function() {
+var Distributors = (function() {
 	
 	return {
 		init: function() {
@@ -127,7 +100,7 @@ MC.distributors = (function() {
 //
 //Custom page
 //
-MC.custom = (function() {
+var Custom = (function() {
 	
 	function calculateTotal() {
 		// add up the price of the bag based on the options selected
@@ -196,7 +169,7 @@ MC.custom = (function() {
 //
 //Gallery page
 //
-MC.gallery = (function() {
+var Gallery = (function() {
 
 	return {
 		init: function () {
@@ -211,7 +184,7 @@ MC.gallery = (function() {
 //
 //Sizes page
 //
-MC.sizes = (function() {
+var Sizes = (function() {
 		
 	return {
 		init: function() {
